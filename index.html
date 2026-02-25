@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modern Landing Page</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+
+        .btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* Grid Cards Section */
+        .container {
+            max-width: 1200px;
+            margin: -3rem auto 3rem auto; /* Overlaps the hero section slightly */
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test Project</h1>
+
+    <header>
+        <a href="#" class="logo">MyBrand.</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to the Future</h1>
+        <p>This is a clean, responsive, and modern HTML template. It uses CSS Flexbox and Grid to look great on both desktop and mobile devices.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <h3>Responsive Design</h3>
+            <p>Resize your browser window! These cards will automatically stack on smaller screens to ensure everything stays readable.</p>
+        </div>
+        <div class="card">
+            <h3>Modern Styling</h3>
+            <p>Utilizing clean typography, soft drop shadows, and a subtle gradient background to give it a professional polish.</p>
+        </div>
+        <div class="card">
+            <h3>Easy to Edit</h3>
+            <p>All the CSS is right at the top of the file, making it incredibly easy for you to tweak colors, fonts, and spacing.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MyBrand. Built with HTML & CSS.</p>
+    </footer>
+
 </body>
 </html>
